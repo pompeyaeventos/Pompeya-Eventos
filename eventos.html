@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos | Pompeya</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f3eb;
+            color: #28352c;
+        }
+
+        header {
+            background: #263b2d;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #d8b45c;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #d8b45c;
+        }
+
+        .encabezado {
+            background: #526b58;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .encabezado small {
+            color: #e3c873;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .encabezado h1 {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .encabezado p {
+            color: #edf0ec;
+        }
+
+        .contenedor {
+            width: 85%;
+            max-width: 1050px;
+            margin: 60px auto;
+        }
+
+        .evento {
+            background: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(40, 53, 44, 0.10);
+            border-left: 6px solid #d8b45c;
+            scroll-margin-top: 30px;
+        }
+
+        .fecha {
+            color: #a68127;
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .evento h2 {
+            color: #263b2d;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .evento p {
+            color: #687269;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .datos {
+            display: flex;
+            gap: 50px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+
+        .dato strong {
+            display: block;
+            color: #263b2d;
+            margin-bottom: 5px;
+        }
+
+        .dato span {
+            color: #687269;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #263b2d;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #d8b45c;
+            color: #263b2d;
+        }
+
+        footer {
+            background: #263b2d;
+            color: #d9ddd8;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .encabezado h1 {
+                font-size: 36px;
+            }
+
+            .contenedor {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        POMPEYA <span>EVENTOS</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="eventos.html">Eventos</a>
+    </nav>
+
+</header>
+
+
+<section class="encabezado">
+
+    <small>AGENDA INSTITUCIONAL</small>
+
+    <h1>
+        Eventos
+    </h1>
+
+    <p>
+        Conoce las actividades programadas de nuestra institución.
+    </p>
+
+</section>
+
+
+<main class="contenedor">
+
+
+    <section class="evento" id="canto">
+
+        <div class="fecha">
+            VIERNES 22 DE MAYO
+        </div>
+
+        <h2>
+            Concurso de Canto
+        </h2>
+
+        <p>
+            Una actividad para disfrutar del talento
+            musical de los estudiantes de Pompeya.
+        </p>
+
+        <div class="datos">
+
+            <div class="dato">
+                <strong>Hora</strong>
+                <span>17:00</span>
+            </div>
+
+            <div class="dato">
+                <strong>Lugar</strong>
+                <span>Coliseo de la institución</span>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="boton">
+            ← Volver al inicio
+        </a>
+
+    </section>
+
+
+    <section class="evento" id="deporte">
+
+        <div class="fecha">
+            SÁBADO 16 DE MAYO
+        </div>
+
+        <h2>
+            Pompeya vs. Vicentino
+        </h2>
+
+        <p>
+            Jornada deportiva para compartir y apoyar
+            a nuestros estudiantes.
+        </p>
+
+        <div class="datos">
+
+            <div class="dato">
+                <strong>Hora</strong>
+                <span>10:00</span>
+            </div>
+
+            <div class="dato">
+                <strong>Lugar</strong>
+                <span>Cancha de la institución</span>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="boton">
+            ← Volver al inicio
+        </a>
+
+    </section>
+
+
+    <section class="evento" id="cultura">
+
+        <div class="fecha">
+            PRÓXIMAMENTE
+        </div>
+
+        <h2>
+            Festival Cultural
+        </h2>
+
+        <p>
+            Un espacio para compartir música, danza,
+            arte y cultura.
+        </p>
+
+        <div class="datos">
+
+            <div class="dato">
+                <strong>Hora</strong>
+                <span>Por confirmar</span>
+            </div>
+
+            <div class="dato">
+                <strong>Lugar</strong>
+                <span>Institución</span>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="boton">
+            ← Volver al inicio
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    Pompeya Eventos · Unidad Educativa Nuestra Señora de Pompeya
+
+</footer>
+
+</body>
+</html>

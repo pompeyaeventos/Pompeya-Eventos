@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pompeya Eventos</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f3eb;
+            color: #28352c;
+        }
+
+        /* NAVBAR */
+
+        header {
+            background: #263b2d;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #d8b45c;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #d8b45c;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 500px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    rgba(38, 59, 45, 0.75),
+                    rgba(38, 59, 45, 0.75)
+                ),
+                #5d7562;
+        }
+
+        .hero-text {
+            max-width: 650px;
+            color: white;
+        }
+
+        .hero small {
+            color: #e3c873;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin: 18px 0;
+            line-height: 1.05;
+        }
+
+        .hero h1 span {
+            color: #e3c873;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #f0eee7;
+            margin-bottom: 30px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 14px 25px;
+            background: #d8b45c;
+            color: #263b2d;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #edd68e;
+        }
+
+        /* SECCION */
+
+        .seccion {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo small {
+            color: #a68127;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .titulo h2 {
+            font-size: 36px;
+            color: #263b2d;
+            margin: 10px 0;
+        }
+
+        .titulo p {
+            color: #687269;
+        }
+
+        /* TARJETAS */
+
+        .tarjetas {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 15px;
+            padding: 28px;
+            box-shadow: 0 8px 25px rgba(40, 53, 44, 0.10);
+            border-top: 5px solid #d8b45c;
+        }
+
+        .tarjeta .fecha {
+            color: #a68127;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .tarjeta h3 {
+            color: #263b2d;
+            margin: 12px 0;
+            font-size: 21px;
+        }
+
+        .tarjeta p {
+            color: #687269;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .enlace {
+            color: #526b58;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .enlace:hover {
+            color: #a68127;
+        }
+
+        /* INFO */
+
+        .info {
+            background: #e7dfce;
+            text-align: center;
+            padding: 65px 8%;
+        }
+
+        .info h2 {
+            color: #263b2d;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #5d665f;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #263b2d;
+            color: #d9ddd8;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .tarjetas {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        POMPEYA <span>EVENTOS</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="eventos.html">Eventos</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <small>UNIDAD EDUCATIVA NUESTRA SEÑORA DE POMPEYA</small>
+
+        <h1>
+            Vive cada momento de
+            <span>Pompeya.</span>
+        </h1>
+
+        <p>
+            Descubre los eventos, actividades y momentos
+            importantes de nuestra comunidad educativa
+            en un solo lugar.
+        </p>
+
+        <a href="eventos.html" class="boton">
+            Ver eventos
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="seccion">
+
+    <div class="titulo">
+
+        <small>PRÓXIMOS EVENTOS</small>
+
+        <h2>
+            Lo que viene en Pompeya
+        </h2>
+
+        <p>
+            Conoce algunas de nuestras próximas actividades.
+        </p>
+
+    </div>
+
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+
+            <div class="fecha">
+                22 DE MAYO
+            </div>
+
+            <h3>
+                Concurso de Canto
+            </h3>
+
+            <p>
+                Una jornada llena de música y talento
+                estudiantil.
+            </p>
+
+            <a href="eventos.html#canto" class="enlace">
+                Ver detalles →
+            </a>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <div class="fecha">
+                16 DE MAYO
+            </div>
+
+            <h3>
+                Pompeya vs. Vicentino
+            </h3>
+
+            <p>
+                Una jornada deportiva para apoyar
+                a nuestros estudiantes.
+            </p>
+
+            <a href="eventos.html#deporte" class="enlace">
+                Ver detalles →
+            </a>
+
+        </div>
+
+
+        <div class="tarjeta">
+
+            <div class="fecha">
+                PRÓXIMAMENTE
+            </div>
+
+            <h3>
+                Festival Cultural
+            </h3>
+
+            <p>
+                Música, danza, arte y cultura
+                en nuestra institución.
+            </p>
+
+            <a href="eventos.html#cultura" class="enlace">
+                Ver detalles →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="info">
+
+    <h2>
+        Todo lo que ocurre en Pompeya
+    </h2>
+
+    <p>
+        Pompeya Eventos es un prototipo de plataforma web
+        creada para organizar y presentar las actividades
+        de la institución de una manera moderna y sencilla.
+    </p>
+
+</section>
+
+
+<footer>
+
+    Pompeya Eventos · Unidad Educativa Nuestra Señora de Pompeya
+
+</footer>
+
+</body>
+</html>

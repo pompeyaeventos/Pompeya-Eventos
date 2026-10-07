@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario | Pompeya</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f3eb;
+            color: #28352c;
+        }
+
+        header {
+            background: #263b2d;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #d8b45c;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #d8b45c;
+        }
+
+        .encabezado {
+            background: #526b58;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .encabezado small {
+            color: #e3c873;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .encabezado h1 {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .contenedor {
+            width: 85%;
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+
+        .mes {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(40, 53, 44, 0.10);
+        }
+
+        .mes-titulo {
+            background: #263b2d;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .evento-calendario {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding: 25px;
+            border-bottom: 1px solid #e5e0d5;
+        }
+
+        .dia {
+            min-width: 70px;
+            text-align: center;
+            background: #eee6d5;
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        .dia strong {
+            display: block;
+            font-size: 24px;
+            color: #263b2d;
+        }
+
+        .dia span {
+            font-size: 12px;
+            color: #a68127;
+            font-weight: bold;
+        }
+
+        .evento-info h3 {
+            color: #263b2d;
+            margin-bottom: 7px;
+        }
+
+        .evento-info p {
+            color: #687269;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            background: #263b2d;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover {
+            background: #d8b45c;
+            color: #263b2d;
+        }
+
+        footer {
+            background: #263b2d;
+            color: #d9ddd8;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .evento-calendario {
+                align-items: flex-start;
+            }
+
+            .encabezado h1 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        POMPEYA <span>EVENTOS</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="eventos.html">Eventos</a>
+    </nav>
+
+</header>
+
+
+<section class="encabezado">
+
+    <small>ORGANIZA TU AGENDA</small>
+
+    <h1>
+        Calendario
+    </h1>
+
+    <p>
+        Revisa las próximas actividades de la institución.
+    </p>
+
+</section>
+
+
+<main class="contenedor">
+
+    <div class="mes">
+
+        <div class="mes-titulo">
+            MAYO
+        </div>
+
+
+        <div class="evento-calendario">
+
+            <div class="dia">
+                <strong>16</strong>
+                <span>MAY</span>
+            </div>
+
+            <div class="evento-info">
+
+                <h3>
+                    Pompeya vs. Vicentino
+                </h3>
+
+                <p>
+                    10:00 · Cancha de la institución
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="evento-calendario">
+
+            <div class="dia">
+                <strong>22</strong>
+                <span>MAY</span>
+            </div>
+
+            <div class="evento-info">
+
+                <h3>
+                    Concurso de Canto
+                </h3>
+
+                <p>
+                    17:00 · Coliseo de la institución
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="evento-calendario">
+
+            <div class="dia">
+                <strong>30</strong>
+                <span>MAY</span>
+            </div>
+
+            <div class="evento-info">
+
+                <h3>
+                    Festival Cultural
+                </h3>
+
+                <p>
+                    Fecha y lugar por confirmar
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <a href="index.html" class="boton">
+        ← Volver al inicio
+    </a>
+
+</main>
+
+
+<footer>
+
+    Pompeya Eventos · Unidad Educativa Nuestra Señora de Pompeya
+
+</footer>
+
+</body>
+</html>

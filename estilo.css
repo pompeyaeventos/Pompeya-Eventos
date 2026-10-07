@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3eb;
+    color: #263b2d;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #263b2d;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #e3c873;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e3c873;
+}
+
+/* INICIO */
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        rgba(38, 59, 45, 0.85),
+        rgba(38, 59, 45, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #e3c873;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    background-color: #d8b45c;
+    color: #263b2d;
+    padding: 13px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* SECCIONES */
+section {
+    padding: 55px 8%;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo h2 {
+    font-size: 35px;
+    color: #263b2d;
+}
+
+.titulo p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* TARJETAS */
+.contenedor-eventos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta h3 {
+    color: #263b2d;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* CALENDARIO */
+.calendario {
+    max-width: 900px;
+    margin: auto;
+}
+
+.evento-calendario {
+    background-color: white;
+    margin-bottom: 18px;
+    padding: 20px;
+    border-left: 6px solid #d8b45c;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.evento-calendario h3 {
+    color: #263b2d;
+    margin-bottom: 8px;
+}
+
+.fecha {
+    color: #a27b18;
+    font-weight: bold;
+}
+
+/* DETALLE DE EVENTOS */
+.detalle {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+}
+
+.detalle h1 {
+    color: #263b2d;
+    margin-bottom: 15px;
+}
+
+.detalle p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #263b2d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer span {
+    color: #e3c873;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .contenedor-eventos {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
